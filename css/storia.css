@@ -1,0 +1,646 @@
+/* Stile nero elegante per la pagina storia */
+body.page-storia {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #e0e0e0;
+    background-color: #0a0a0a;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.storia-header {
+    padding: 160px 0 80px;
+    background: linear-gradient(180deg, #121212 0%, #0a0a0a 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.storia-title {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-out;
+    text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+}
+
+.storia-subtitle {
+    font-size: 32px;
+    font-weight: 400;
+    color: #a0a0a0;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.storia-intro {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto 80px;
+    animation: fadeIn 1.4s ease-out;
+}
+
+/* Timeline migliorata */
+.timeline-section {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline-section h2 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 100px;
+    text-align: center;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+}
+
+.timeline-item {
+    margin-bottom: 180px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    border-left: 3px solid #d4af37;
+    padding-left: 40px;
+    background: rgba(20, 20, 20, 0.5);
+    border-radius: 0 15px 15px 0;
+    padding: 30px 30px 30px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item.visible, .timeline-item.timeline-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-year {
+    text-align: left;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-year span {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    padding: 12px 30px;
+    border-radius: 40px;
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+    display: inline-block;
+}
+
+/* Aggiunti nuovi stili per migliorare l'aspetto */
+.timeline-content {
+    position: relative;
+}
+
+.timeline-content h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+.timeline-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.timeline-image {
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.timeline-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Stile per le figure chiave */
+.key-figures {
+    margin-top: 80px;
+    padding: 60px 0;
+    background: linear-gradient(180deg, #0a0a0a 0%, #121212 100%);
+}
+
+.key-figures h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.figure-card {
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.figure-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+}
+
+.figure-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.figure-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.figure-card:hover .figure-image img {
+    transform: scale(1.1);
+}
+
+.figure-info {
+    padding: 25px;
+}
+
+.figure-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+.figure-role {
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+}
+
+.figure-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Animazioni */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .storia-title {
+        font-size: 48px;
+    }
+    
+    .storia-subtitle {
+        font-size: 24px;
+    }
+    
+    .timeline-section h2 {
+        font-size: 42px;
+    }
+    
+    .timeline-year span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .storia-title {
+        font-size: 36px;
+    }
+    
+    .storia-subtitle {
+        font-size: 20px;
+    }
+    
+    .storia-intro {
+        font-size: 18px;
+    }
+    
+    .timeline-section h2 {
+        font-size: 32px;
+    }
+    
+    .timeline-item {
+        padding: 20px 20px 20px 30px;
+    }
+    
+    .timeline-year span {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 24px;
+    }
+    
+    .timeline-content p {
+        font-size: 16px;
+    }
+}
+
+/* Stili per la sezione "I Quattro Elementi dell'Hip Hop" */
+.elementi-hiphop {
+    padding: 80px 0;
+    background-color: #0a0a0a;
+}
+
+.elementi-hiphop h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.elementi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.elemento-card {
+    flex: 1 0 calc(25% - 30px);
+    min-width: 250px;
+    background-color: rgba(20, 20, 20, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    text-align: center;
+}
+
+.elemento-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.elemento-icon {
+    font-size: 48px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.elemento-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+.elemento-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Stili per la sezione "L'Impatto Culturale dell'Hip Hop" */
+.impatto-culturale {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #0a0a0a 0%, #121212 100%);
+}
+
+.impatto-culturale h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.impatto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.impatto-item {
+    background-color: rgba(20, 20, 20, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.impatto-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+}
+
+.impatto-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+.impatto-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Responsive per le nuove sezioni */
+@media (max-width: 992px) {
+    .elementi-hiphop h2,
+    .impatto-culturale h2 {
+        font-size: 42px;
+    }
+    
+    .elemento-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .elementi-hiphop h2,
+    .impatto-culturale h2 {
+        font-size: 36px;
+    }
+    
+    .elemento-card {
+        flex: 1 0 calc(50% - 20px);
+    }
+    
+    .elemento-title {
+        font-size: 22px;
+    }
+    
+    .impatto-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .elemento-card {
+        flex: 1 0 100%;
+    }
+}
+
+/* Stili specifici per la sezione "I Quattro Elementi dell'Hip Hop" */
+.quattro-elementi {
+    padding: 100px 0;
+    background-color: #0a0a0a;
+    text-align: center;
+}
+
+.quattro-elementi h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-out;
+}
+
+.elementi-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.elemento {
+    flex: 1 0 calc(25% - 40px);
+    min-width: 240px;
+    max-width: 300px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.elemento:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+    border-color: rgba(212, 175, 55, 0.3);
+    background-color: rgba(40, 40, 40, 0.6);
+}
+
+.elemento-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #d4af37;
+    transition: all 0.3s ease;
+}
+
+.elemento:hover .elemento-icon {
+    transform: scale(1.2);
+}
+
+.elemento h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+.elemento p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Stili per la sezione impatto culturale */
+.impatto-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #0a0a0a 0%, #121212 100%);
+}
+
+.impatto-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.impatto-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.impatto-box {
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.impatto-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.impatto-box h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+.impatto-box p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+/* Responsive per le sezioni aggiuntive */
+@media (max-width: 992px) {
+    .quattro-elementi h2,
+    .impatto-section h2 {
+        font-size: 42px;
+    }
+    
+    .elemento h3 {
+        font-size: 24px;
+    }
+    
+    .impatto-box h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quattro-elementi h2,
+    .impatto-section h2 {
+        font-size: 36px;
+    }
+    
+    .elemento {
+        flex: 1 0 calc(50% - 20px);
+        min-width: 200px;
+    }
+    
+    .impatto-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .impatto-box {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .elemento {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+    
+    .elemento h3 {
+        font-size: 22px;
+    }
+    
+    .impatto-box h3 {
+        font-size: 22px;
+    }
+}
+
+/* Stili per la sezione conclusiva */
+.conclusione {
+    padding: 120px 0;
+    background-color: #0a0a0a;
+    text-align: center;
+}
+
+.conclusione h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conclusione p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.conclusione-cta {
+    display: inline-block;
+    background: linear-gradient(90deg, #d4af37 0%, #f5d76e 100%);
+    color: #000;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.conclusione-cta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+    color: #000;
+}
+
+/* Animazione per gli elementi quando entrano nel viewport */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

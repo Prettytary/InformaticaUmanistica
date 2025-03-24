@@ -1,0 +1,89 @@
+/* Sezione "hero" con sfondo scuro e testo chiaro */
+.rotating-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Occupiamo l'intera finestra, se vuoi */
+    overflow: hidden;
+    background-color: #000; /* Sfondo di base */
+}
+
+/* Contenitore circolare che ruota */
+.circle {
+    position: absolute;
+    width: 500px;   /* Regola a piacere */
+    height: 500px;  /* Regola a piacere */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra il cerchio nella sezione */
+    border-radius: 50%;
+    animation: spin 30s linear infinite; /* Rotazione infinita */
+}
+
+/* Ogni immagine nella cerchio */
+.circle__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;   /* Dimensione immagine */
+    height: 120px;
+    transform-origin: 0 0; /* Punto attorno a cui ruotare */
+    border-radius: 50%;
+    overflow: hidden;
+    /* Puoi aggiungere un box-shadow se vuoi */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.circle__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Distribuisci le immagini a intervalli regolari sul cerchio
+   Se hai 4 immagini, separale di 90° ciascuna.
+   Se ne hai di più, calcola 360° / numero immagini.
+*/
+.circle__item:nth-child(1) {
+    transform: rotate(0deg) translate(200px) rotate(-0deg);
+}
+.circle__item:nth-child(2) {
+    transform: rotate(90deg) translate(200px) rotate(-90deg);
+}
+.circle__item:nth-child(3) {
+    transform: rotate(180deg) translate(200px) rotate(-180deg);
+}
+.circle__item:nth-child(4) {
+    transform: rotate(270deg) translate(200px) rotate(-270deg);
+}
+
+/* Animazione della rotazione */
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Testo in primo piano */
+.hero-content {
+    position: relative;
+    z-index: 1; /* Mettiamo il testo sopra le immagini */
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Esempio di stile per i pulsanti */
+.btn-primary {
+    background-color: #ff9800;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #e68a00;
+}

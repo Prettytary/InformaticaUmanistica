@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hip Hop – Catalogo</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Foglio di stile personalizzato -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+   
+<body class="page-catalogo">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Hip Hop Culture</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="storia.html">Storia</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link menu-link" href="catalogo.html">Catalogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="producer.html">Producer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="moda.html">Moda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="contatti.html">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header del catalogo -->
+<header class="catalogo-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="catalogo-title">Catalogo Hip Hop</h1>
+                <p class="catalogo-subtitle">Esplora la musica e la moda che hanno definito la cultura Hip Hop</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Tabs per navigare tra musica e moda -->
+<section class="catalogo-tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Tab navigation -->
+                <ul class="nav nav-tabs justify-content-center" id="catalogoTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="musica-tab" data-toggle="tab" href="#musica" role="tab" aria-controls="musica" aria-selected="true">Musica</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="moda-tab" href="moda.html" role="tab" aria-controls="moda" aria-selected="false">Moda</a>
+                    </li>
+                </ul>
+                
+                <!-- Tab content -->
+                <div class="tab-content" id="catalogoTabContent">
+                    <!-- Musica tab -->
+                    <div class="tab-pane fade show active" id="musica" role="tabpanel" aria-labelledby="musica-tab">
+                        <!-- Contenuto della sezione musica -->
+                <h2 class="section-title text-center mb-5">I 100 Artisti Hip Hop Più Influenti</h2>
+                
+                <div class="row">
+                    <!-- Artisti 1-4 (prima riga) -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/tupac.jpg" alt="Tupac Shakur" onerror="this.src='https://picsum.photos/400/400?random=1'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">1. Tupac Shakur</h3>
+                                <p class="artist-desc">Leggendario rapper, attore e poeta, considerato uno dei più influenti artisti hip hop di tutti i tempi.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>California Love</li>
+                                        <li>Changes</li>
+                                        <li>Dear Mama</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Tupac Shakur">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/notorious.jpeg" alt="The Notorious B.I.G." onerror="this.src='https://picsum.photos/400/400?random=2'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">2. The Notorious B.I.G.</h3>
+                                <p class="artist-desc">Considerato uno dei più grandi rapper di tutti i tempi, noto per il suo flow unico e le sue rime narrative.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>Juicy</li>
+                                        <li>Hypnotize</li>
+                                        <li>Big Poppa</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="The Notorious B.I.G.">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/jayz.jpg" alt="Jay-Z" onerror="this.src='https://picsum.photos/400/400?random=3'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">3. Jay-Z</h3>
+                                <p class="artist-desc">Rapper, produttore e imprenditore, uno degli artisti musicali di maggior successo commerciale di tutti i tempi.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>Empire State of Mind</li>
+                                        <li>99 Problems</li>
+                                        <li>Hard Knock Life</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Jay-Z">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/nas.jpg" alt="Nas" onerror="this.src='https://picsum.photos/400/400?random=4'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">4. Nas</h3>
+                                <p class="artist-desc">Considerato uno dei più grandi parolieri dell'hip hop, noto per la sua poesia urbana e il suo storytelling.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>N.Y. State of Mind</li>
+                                        <li>The World Is Yours</li>
+                                        <li>One Mic</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Nas">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Artisti 5-8 (seconda riga) -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/eminem.webp" alt="Eminem" onerror="this.src='https://picsum.photos/400/400?random=5'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">5. Eminem</h3>
+                                <p class="artist-desc">Uno dei rapper più venduti di tutti i tempi, noto per la sua abilità tecnica e i testi controversi.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>Lose Yourself</li>
+                                        <li>Stan</li>
+                                        <li>The Real Slim Shady</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Eminem">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/kendrick.webp" alt="Kendrick Lamar" onerror="this.src='https://picsum.photos/400/400?random=6'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">6. Kendrick Lamar</h3>
+                                <p class="artist-desc">Vincitore del Premio Pulitzer, considerato uno dei più grandi artisti hip hop contemporanei.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>HUMBLE.</li>
+                                        <li>Alright</li>
+                                        <li>DNA.</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Kendrick Lamar">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/drdre.jpg" alt="Dr. Dre" onerror="this.src='https://picsum.photos/400/400?random=7'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">7. Dr. Dre</h3>
+                                <p class="artist-desc">Produttore, rapper e imprenditore, fondamentale per lo sviluppo del G-funk e per aver lanciato numerosi artisti.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>Nuthin' but a 'G' Thang</li>
+                                        <li>Still D.R.E.</li>
+                                        <li>Forgot About Dre</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Dr. Dre">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/snoop.jpg" alt="Snoop Dogg" onerror="this.src='https://picsum.photos/400/400?random=8'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">8. Snoop Dogg</h3>
+                                <p class="artist-desc">Icona del West Coast hip hop, noto per il suo flow distintivo e la sua personalità carismatica.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>Gin and Juice</li>
+                                        <li>Drop It Like It's Hot</li>
+                                        <li>Who Am I (What's My Name)?</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Snoop Dogg">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artisti 9-12 (terza riga) -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/laurynhill.jpg" alt="Lauryn Hill" onerror="this.src='https://picsum.photos/400/400?random=9'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">9. Lauryn Hill</h3>
+                                <p class="artist-desc">Cantante, rapper e attrice, ex membro dei Fugees, ha ridefinito l'hip hop con elementi di soul e reggae.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>Doo Wop (That Thing)</li>
+                                        <li>Ex-Factor</li>
+                                        <li>Lost Ones</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Lauryn Hill">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/kanyewest.jpg" alt="Kanye West" onerror="this.src='https://picsum.photos/400/400?random=10'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">10. Kanye West</h3>
+                                <p class="artist-desc">Rapper, produttore e designer che ha ridefinito più volte il suono dell'hip hop contemporaneo.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>Gold Digger</li>
+                                        <li>Stronger</li>
+                                        <li>Runaway</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Kanye West">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/icecube.jpg" alt="Ice Cube" onerror="this.src='https://picsum.photos/400/400?random=11'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">11. Ice Cube</h3>
+                                <p class="artist-desc">Rapper, attore e regista, ex membro degli N.W.A., pioniere del gangsta rap della West Coast.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>It Was A Good Day</li>
+                                        <li>Check Yo Self</li>
+                                        <li>No Vaseline</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Ice Cube">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="img/rakim.jpg" alt="Rakim" onerror="this.src='https://picsum.photos/400/400?random=12'">
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">12. Rakim</h3>
+                                <p class="artist-desc">Considerato uno dei più grandi MC di tutti i tempi, ha rivoluzionato il flow e la tecnica lirica nell'hip hop.</p>
+                                <div class="song-list">
+                                    <h4>Canzoni Iconiche:</h4>
+                                    <ul>
+                                        <li>Paid in Full</li>
+                                        <li>I Know You Got Soul</li>
+                                        <li>Microphone Fiend</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary artist-btn" data-toggle="modal" data-target="#artistModal" data-artist="Rakim">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Continua con gli altri artisti (13-100) -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="artist-list-container">
+                            <h3 class="text-center mb-4">Altri Artisti Influenti</h3>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="artist-list">
+                                        <li>13. Run-DMC</li>
+                                        <li>14. LL Cool J</li>
+                                        <li>15. OutKast</li>
+                                        <li>16. Wu-Tang Clan</li>
+                                        <li>17. Public Enemy</li>
+                                        <li>18. Grandmaster Flash</li>
+                                        <li>19. J. Cole</li>
+                                        <li>20. Lauryn Hill</li>
+                                        <li>21. Missy Elliott</li>
+                                        <li>22. Beastie Boys</li>
+                                        <li>23. A Tribe Called Quest</li>
+                                        <li>24. N.W.A</li>
+                                        <li>25. 50 Cent</li>
+                                        <li>26. Nicki Minaj</li>
+                                        <li>27. Drake</li>
+                                        <li>28. Eazy-E</li>
+                                        <li>29. DMX</li>
+                                        <li>30. Scarface</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="artist-list">
+                                        <li>31. Big Daddy Kane</li>
+                                        <li>32. KRS-One</li>
+                                        <li>33. Slick Rick</li>
+                                        <li>34. Kool G Rap</li>
+                                        <li>35. Mobb Deep</li>
+                                        <li>36. The Roots</li>
+                                        <li>37. Cypress Hill</li>
+                                        <li>38. De La Soul</li>
+                                        <li>39. Eric B. & Rakim</li>
+                                        <li>40. Big Pun</li>
+                                        <li>41. Common</li>
+                                        <li>42. Mos Def</li>
+                                        <li>43. Talib Kweli</li>
+                                        <li>44. Redman</li>
+                                        <li>45. Method Man</li>
+                                        <li>46. Ghostface Killah</li>
+                                        <li>47. Raekwon</li>
+                                        <li>48. GZA</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="artist-list">
+                                        <li>49. MF DOOM</li>
+                                        <li>50. Busta Rhymes</li>
+                                        <li>51. Ludacris</li>
+                                        <li>52. T.I.</li>
+                                        <li>53. Jeezy</li>
+                                        <li>54. Gucci Mane</li>
+                                        <li>55. Future</li>
+                                        <li>56. Young Thug</li>
+                                        <li>57. Lil Uzi Vert</li>
+                                        <li>58. Travis Scott</li>
+                                        <li>59. Migos</li>
+                                        <li>60. Cardi B</li>
+                                        <li>61. Queen Latifah</li>
+                                        <li>62. MC Lyte</li>
+                                        <li>63. Salt-N-Pepa</li>
+                                        <li>64. Lil' Kim</li>
+                                        <li>65. Foxy Brown</li>
+                                        <li>66. Eve</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Seconda parte della lista (67-100) -->
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <ul class="artist-list">
+                                        <li>67. Megan Thee Stallion</li>
+                                        <li>68. Doja Cat</li>
+                                        <li>69. Tyler, The Creator</li>
+                                        <li>70. Earl Sweatshirt</li>
+                                        <li>71. Frank Ocean</li>
+                                        <li>72. A$AP Rocky</li>
+                                        <li>73. Chance the Rapper</li>
+                                        <li>74. Mac Miller</li>
+                                        <li>75. Juice WRLD</li>
+                                        <li>76. XXXTentacion</li>
+                                        <li>77. Pop Smoke</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="artist-list">
+                                        <li>78. Nipsey Hussle</li>
+                                        <li>79. Rick Ross</li>
+                                        <li>80. 2Pac</li>
+                                        <li>81. Meek Mill</li>
+                                        <li>82. Pusha T</li>
+                                        <li>83. Big Sean</li>
+                                        <li>84. ScHoolboy Q</li>
+                                        <li>85. Ab-Soul</li>
+                                        <li>86. Joey Bada$$</li>
+                                        <li>87. Vince Staples</li>
+                                        <li>88. Anderson .Paak</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="artist-list">
+                                        <li>89. Denzel Curry</li>
+                                        <li>90. JID</li>
+                                        <li>91. Freddie Gibbs</li>
+                                        <li>92. Lupe Fiasco</li>
+                                        <li>93. Kid Cudi</li>
+                                        <li>94. Wiz Khalifa</li>
+                                        <li>95. Childish Gambino</li>
+                                        <li>96. Logic</li>
+                                        <li>97. 21 Savage</li>
+                                        <li>98. Roddy Ricch</li>
+                                        <li>99. DaBaby</li>
+                                        <li>100. Lil Baby</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pulsante per la pagina dei producer -->
+                <div class="row mt-5 mb-5">
+                    <div class="col-12 text-center">
+                        <a href="producer.html" class="btn btn-lg btn-primary producer-btn">
+                            <i class="fas fa-headphones mr-2"></i>Scopri i Producer Più Influenti
+                        </a>
+                        <p class="mt-3">Esplora il mondo dei producer che hanno definito il suono dell'hip hop</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Tab Moda -->
+            <div class="tab-pane fade" id="moda" role="tabpanel" aria-labelledby="moda-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="moda-title">La Moda Hip Hop</h1>
+                            <p class="moda-subtitle">Dall'abbigliamento di strada alle passerelle: come la cultura hip hop ha rivoluzionato il mondo della moda</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-5">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <p class="moda-intro">La moda hip hop è molto più di un semplice stile di abbigliamento: è un'espressione culturale che riflette l'evoluzione del movimento hip hop dagli anni '70 ad oggi. Dalle strade del Bronx alle passerelle di alta moda, lo stile hip hop ha ridefinito i canoni estetici contemporanei.</p>
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-center mb-5">Evoluzione della Moda Hip Hop</h2>
+                    
+                    <!-- Anni '70-'80 -->
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="img/moda-80s.jpg" alt="Moda Hip Hop anni '80" class="img-fluid rounded" onerror="this.src='https://picsum.photos/600/400?random=1'">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Anni '70-'80: Le Origini</h3>
+                            <p>Gli albori della moda hip hop sono caratterizzati da abbigliamento sportivo, tute Adidas, cappelli da baseball, sneakers Puma e gioielli vistosi. Le crew di b-boy indossavano abiti comodi per le performance di breakdance.</p>
+                            <ul>
+                                <li>Tute Adidas con strisce laterali</li>
+                                <li>Sneakers Puma Suede e Adidas Superstar</li>
+                                <li>Cappelli da baseball e bucket hat</li>
+                                <li>Catene d'oro vistose ("dookie chains")</li>
+                            </ul>
+                            <p><strong>Icone di stile:</strong> Grandmaster Flash, Run-DMC, LL Cool J</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Anni '90 -->
+                    <div class="row mb-5">
+                        <div class="col-md-6 order-md-2">
+                            <img src="img/moda-90s.jpg" alt="Moda Hip Hop anni '90" class="img-fluid rounded" onerror="this.src='https://picsum.photos/600/400?random=2'">
+                        </div>
+                        <div class="col-md-6 order-md-1">
+                            <h3>Anni '90: L'Era d'Oro</h3>
+                            <p>Gli anni '90 vedono l'esplosione dello stile baggy, con jeans oversize, felpe con cappuccio e bandane. La rivalità East Coast vs West Coast si riflette anche nello stile di abbigliamento.</p>
+                            <ul>
+                                <li>Jeans baggy e salopette</li>
+                                <li>Maglie sportive oversize</li>
+                                <li>Bandane e cappelli da baseball indossati in vari modi</li>
+                                <li>Timberland boots e sneakers Air Jordan</li>
+                                <li>Abbigliamento di brand come FUBU, Karl Kani e Cross Colours</li>
+                            </ul>
+                            <p><strong>Icone di stile:</strong> Tupac, Notorious B.I.G., Snoop Dogg, TLC, Aaliyah</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Anni 2000 -->
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="img/moda-2000s.jpg" alt="Moda Hip Hop anni 2000" class="img-fluid rounded" onerror="this.src='https://picsum.photos/600/400?random=3'">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Anni 2000: L'Era Bling</h3>
+                            <p>Gli anni 2000 sono caratterizzati dall'estetica "bling-bling", con gioielli vistosi, abbigliamento di lusso e l'ascesa di marchi creati da artisti hip hop come Rocawear (Jay-Z), Sean John (P. Diddy) e G-Unit (50 Cent).</p>
+                            <ul>
+                                <li>Abbigliamento oversize di brand di lusso</li>
+                                <li>Gioielli vistosi con diamanti e pietre preziose</li>
+                                <li>Tute in velour</li>
+                                <li>Grillz (decorazioni dentali in oro)</li>
+                                <li>Brand come Rocawear (Jay-Z), Sean John (P. Diddy) e G-Unit (50 Cent)</li>
+                            </ul>
+                            <p><strong>Icone di stile:</strong> Jay-Z, P. Diddy, 50 Cent, Missy Elliott, Pharrell Williams</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Anni 2010-Oggi -->
+                    <div class="row mb-5">
+                        <div class="col-md-6 order-md-2">
+                            <img src="img/moda-today.jpg" alt="Moda Hip Hop contemporanea" class="img-fluid rounded" onerror="this.src='https://picsum.photos/600/400?random=4'">
+                        </div>
+                        <div class="col-md-6 order-md-1">
+                            <h3>Anni 2010-Oggi: Alta Moda e Streetwear</h3>
+                            <p>L'era contemporanea vede la fusione tra streetwear e alta moda, con artisti hip hop che diventano designer e influencer nel mondo della moda.</p>
+                            <ul>
+                                <li>Streetwear di lusso</li>
+                                <li>Sneakers limited edition e collaborazioni esclusive</li>
+                                <li>Abbigliamento athleisure</li>
+                                <li>Brand come Yeezy (Kanye West), Off-White (Virgil Abloh) e Fenty (Rihanna)</li>
+                                <li>Ritorno di elementi vintage degli anni '80 e '90</li>
+                            </ul>
+                            <p><strong>Icone di stile:</strong> A$AP Rocky, Kanye West, Travis Scott, Cardi B, Rihanna</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Brand Iconici -->
+                    <h2 class="text-center mb-5">Brand Iconici dell'Hip Hop</h2>
+                    
+                    <div class="row mb-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="brand-card">
+                                <h4>FUBU</h4>
+                                <p>"For Us, By Us" - Fondato nel 1992 da Daymond John, J. Alexander Martin, Keith Perrin e Carlton Brown, FUBU è diventato un simbolo dell'imprenditorialità afroamericana e della moda hip hop degli anni '90.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="brand-card">
+                                <h4>Rocawear</h4>
+                                <p>Fondato da Jay-Z e Damon Dash nel 1999, Rocawear è diventato uno dei brand di abbigliamento hip hop più influenti degli anni 2000, con un fatturato che ha raggiunto i 700 milioni di dollari.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="brand-card">
+                                <h4>Sean John</h4>
+                                <p>Lanciato da P. Diddy nel 1998, Sean John ha portato l'estetica hip hop nel mondo dell'alta moda, vincendo anche il prestigioso CFDA Award per il design menswear nel 2004.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="brand-card">
+                                <h4>Phat Farm</h4>
+                                <p>Creato da Russell Simmons nel 1992, Phat Farm ha combinato elementi di streetwear, sportswear e abbigliamento preppy, definendo un nuovo stile urbano.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="brand-card">
+                                <h4>Karl Kani</h4>
+                                <p>Fondato nel 1989 da Carl Williams, Karl Kani è stato uno dei primi brand di moda creati da un designer afroamericano, pioniere dello stile baggy degli anni '90.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="brand-card">
+                                <h4>Cross Colours</h4>
+                                <p>Lanciato nel 1989 da Carl Jones e TJ Walker, Cross Colours ha rivoluzionato la moda con i suoi colori vivaci e i messaggi sociali, diventando simbolo di consapevolezza culturale.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Influenza sulla moda mainstream -->
+                    <div class="influence-section mt-5">
+                        <h2 class="text-center mb-4">L'Influenza dell'Hip Hop sulla Moda Mainstream</h2>
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <p class="text-center mb-5">La cultura hip hop ha trasformato radicalmente il mondo della moda, influenzando designer di alta moda e cambiando per sempre il panorama del retail globale.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="influence-card">
+                                    <h3>Collaborazioni con Brand di Lusso</h3>
+                                    <p>Negli ultimi anni, numerosi artisti hip hop hanno collaborato con brand di lusso: Kanye West con Louis Vuitton, A$AP Rocky con Dior, Travis Scott con Saint Laurent, e molti altri.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <div class="influence-card">
+                                    <h3>Artisti come Designer</h3>
+                                    <p>Artisti come Kanye West, Rihanna e Virgil Abloh sono passati dall'essere semplici testimonial a veri e propri designer, ridefinendo i confini tra streetwear e alta moda.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                <!-- Descrizione generale della moda hip hop -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="moda-description">
+                            <p class="text-center">La moda hip hop è molto più di un semplice stile di abbigliamento: è un'espressione culturale che riflette l'evoluzione del movimento hip hop dagli anni '70 ad oggi. Dalle strade del Bronx alle passerelle di alta moda, lo stile hip hop ha ridefinito i canoni estetici contemporanei.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pulsante per la pagina moda completa -->
+                <div class="row mt-5 mb-5">
+                    <div class="col-12 text-center">
+                        <a href="moda.html" class="btn btn-lg btn-primary fashion-btn">
+                            <i class="fas fa-tshirt mr-2"></i>Esplora la Storia della Moda Hip Hop
+                        </a>
+                        <p class="mt-3">Scopri l'evoluzione completa della moda hip hop dalle origini ad oggi</p>
+                    </div>
+                </div>
+            </div>
+                
+                <!-- Descrizione generale della moda hip hop -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="moda-description">
+                            <p class="text-center">La moda hip hop è molto più di un semplice stile di abbigliamento: è un'espressione culturale che riflette l'evoluzione del movimento hip hop dagli anni '70 ad oggi. Dalle strade del Bronx alle passerelle di alta moda, lo stile hip hop ha ridefinito i canoni estetici contemporanei.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ELIMINATO: Pulsante per la pagina moda completa -->
+                
+                <!-- Sezione evoluzione della moda hip hop -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <h3>Evoluzione della Moda Hip Hop</h3>
+                    </div>
+                </div>
+                
+                <!-- Contenuto nascosto per i modal -->
+                <div style="display: none;">
+                    <div class="moda-era" id="era-details-80s">
+                        <h4>Anni '70-'80: Le Origini</h4>
+                        <p>Gli albori della moda hip hop sono caratterizzati da abbigliamento sportivo, influenzato dai b-boy e dalle crew di breakdance del Bronx. Le tute Adidas, i cappelli da baseball, le sneakers Puma e le catene d'oro vistose diventano simboli distintivi di questa cultura emergente.</p>
+                        <p>Icone di stile: Run-DMC, LL Cool J, Grandmaster Flash</p>
+                    </div>
+                    
+                    <div class="moda-era" id="era-details-90s">
+                        <h4>Anni '90: L'Era d'Oro</h4>
+                        <p>Gli anni '90 rappresentano l'era d'oro della moda hip hop, con jeans baggy, felpe con cappuccio, bandane e sneakers Air Jordan. La distinzione tra East Coast e West Coast si riflette anche nello stile di abbigliamento.</p>
+                        <p>Icone di stile: Tupac, Notorious B.I.G., Wu-Tang Clan, TLC, Aaliyah</p>
+                    </div>
+                    
+                    <div class="moda-era" id="era-details-2000s">
+                        <h4>Anni 2000: L'Era Bling</h4>
+                        <p>Gli anni 2000 sono caratterizzati dall'estetica "bling-bling", con gioielli vistosi, abbigliamento di lusso e l'ascesa di marchi creati da artisti hip hop come Rocawear (Jay-Z), Sean John (P. Diddy) e G-Unit (50 Cent).</p>
+                        <p>Icone di stile: Jay-Z, P. Diddy, 50 Cent, Missy Elliott, Pharrell Williams</p>
+                    </div>
+                    
+                    <div class="moda-era" id="era-details-today">
+                        <h4>Oggi: Alta Moda e Streetwear</h4>
+                        <p>L'era contemporanea vede la fusione tra streetwear e alta moda, con artisti hip hop che diventano designer e influencer nel mondo della moda. Brand come Yeezy (Kanye West), Off-White (Virgil Abloh) e Fenty (Rihanna) ridefiniscono i confini tra street style e passerelle.</p>
+                        <p>Icone di stile: A$AP Rocky, Kanye West, Travis Scott, Cardi B, Rihanna</p>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Hip Hop Culture</h5>
+                    <p>Esplora la ricca storia e l'evoluzione della cultura hip hop.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Link Rapidi</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="storia.html">Storia</a></li>
+                        <li class="nav-item active">
+                            <a class="nav-link menu-link" href="catalogo.html">Catalogo</a>
+                        </li>
+                        <li><a href="producer.html">Producer</a></li>
+                        <!-- Link "Moda" rimosso da qui -->
+                        <li><a href="contatti.html">Contatti</a></li>
+                        <li><a href="project-plan.html">Project Plan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Seguici</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Hip Hop Culture. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery, Popper.js e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Script personalizzato per i tab -->
+    <script>
+        $(document).ready(function() {
+            // Gestisce solo il tab musica, il tab moda reindirizza direttamente
+            $('#musica-tab').on('click', function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+    </script>
+    
+    <!-- Script per la navbar -->
+    <script>
+    // Aggiungi la classe 'scrolled' alla navbar quando si scorre la pagina
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+    </script>
+    </body>
+    </html>
+</body>
+</html>
+
+<!-- Modal per i dettagli degli artisti -->
+    <div class="modal fade" id="artistModal" tabindex="-1" role="dialog" aria-labelledby="artistModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artistModalLabel">Dettagli Artista</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Il contenuto verrà caricato dinamicamente -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal per i dettagli della moda -->
+    <div class="modal fade" id="modaModal" tabindex="-1" role="dialog" aria-labelledby="modaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaModalLabel">Moda Hip Hop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Il contenuto verrà caricato dinamicamente -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+

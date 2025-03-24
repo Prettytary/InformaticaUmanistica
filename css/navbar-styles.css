@@ -1,0 +1,231 @@
+/* Stile per la navbar - File dedicato */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.9);
+    transition: background-color 0.3s ease;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: rgba(10, 10, 10, 0.98);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 0.5s ease forwards;
+}
+
+.custom-navbar {
+    background-color: rgba(10, 10, 10, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    color: #d4af37;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f5d76e;
+    transform: scale(1.05);
+}
+
+/* Stili per i link della navbar */
+.navbar-dark .navbar-nav .nav-link,
+.nav-link.menu-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-item.active .nav-link,
+.nav-link.menu-link:hover, 
+.nav-item.active .nav-link.menu-link {
+    color: #d4af37 !important;
+}
+
+/* Effetto hover sottile */
+.navbar-dark .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #d4af37;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-dark .navbar-nav .nav-item:hover::after,
+.navbar-dark .navbar-nav .nav-item.active::after {
+    width: 70%;
+}
+
+/* Aggiunta di padding al body per compensare la navbar fixed */
+body {
+    padding-top: 80px;
+    /* Stile specifico per la navbar della home page */
+    .page-home .navbar-brand,
+    .page-home .navbar-dark .navbar-nav .nav-link:hover,
+    .page-home .navbar-dark .navbar-nav .nav-item.active .nav-link,
+    .page-home .nav-link.menu-link:hover,
+    .page-home .nav-item.active .nav-link.menu-link {
+        color: #d4af37 !important;
+    }
+    
+    .page-home .navbar-dark .navbar-nav .nav-item::after {
+        background-color: #d4af37;
+    }
+}
+
+/* Stile per il toggler su dispositivi mobili */
+.navbar-toggler {
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(212, 175, 55, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Varianti di colore per le diverse pagine */
+.page-storia .navbar-brand,
+.page-storia .navbar-dark .navbar-nav .nav-link:hover,
+.page-storia .navbar-dark .navbar-nav .nav-item.active .nav-link,
+.page-storia .nav-link.menu-link:hover,
+.page-storia .nav-item.active .nav-link.menu-link {
+    color: #d4af37 !important;
+}
+
+.page-storia .navbar-dark .navbar-nav .nav-item::after {
+    background-color: #d4af37;
+}
+
+.page-catalogo .navbar-brand,
+.page-catalogo .navbar-dark .navbar-nav .nav-link:hover,
+.page-catalogo .navbar-dark .navbar-nav .nav-item.active .nav-link,
+.page-catalogo .nav-link.menu-link:hover,
+.page-catalogo .nav-item.active .nav-link.menu-link {
+    color: #ff2d55 !important;
+}
+
+.page-catalogo .navbar-dark .navbar-nav .nav-item::after {
+    background-color: #ff2d55;
+}
+
+.page-producer .navbar-brand,
+.page-producer .navbar-dark .navbar-nav .nav-link:hover,
+.page-producer .navbar-dark .navbar-nav .nav-item.active .nav-link,
+.page-producer .nav-link.menu-link:hover,
+.page-producer .nav-item.active .nav-link.menu-link {
+    color: #5e5ce6 !important;
+}
+
+.page-producer .navbar-dark .navbar-nav .nav-item::after {
+    background-color: #5e5ce6;
+}
+
+.page-moda .navbar-brand,
+.page-moda .navbar-dark .navbar-nav .nav-link:hover,
+.page-moda .navbar-dark .navbar-nav .nav-item.active .nav-link,
+.page-moda .nav-link.menu-link:hover,
+.page-moda .nav-item.active .nav-link.menu-link {
+    color: #ff9500 !important;
+}
+
+.page-moda .navbar-dark .navbar-nav .nav-item::after {
+    background-color: #ff9500;
+}
+
+/* Animazione per la navbar quando si scorre */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(10, 10, 10, 0.95);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .navbar-dark .navbar-nav .nav-item::after {
+        display: none;
+    }
+    
+    .navbar-dark .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-item.active .nav-link {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Modifica per rendere la navbar più scura e rimuovere la linea bianca */
+.navbar, .custom-navbar {
+    background-color: #0a0a0a !important; /* Nero più intenso */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border: none !important; /* Rimuove eventuali bordi */
+    margin-bottom: 0 !important; /* Rimuove eventuali margini */
+}
+
+/* Rimuove anche eventuali bordi dal container della navbar */
+.navbar .container {
+    border-bottom: none !important;
+}
+
+/* Assicuriamoci che non ci siano elementi con bordi bianchi */
+.navbar::after, 
+.navbar::before,
+.navbar-dark::after,
+.navbar-dark::before {
+    display: none !important;
+}
+
+.navbar.scrolled {
+    background-color: rgba(10, 10, 10, 0.98) !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Stile specifico per la home page */
+.page-home .navbar-brand,
+.page-home .navbar-dark .navbar-nav .nav-link:hover,
+.page-home .navbar-dark .navbar-nav .nav-item.active .nav-link,
+.page-home .nav-link.menu-link:hover,
+.page-home .nav-item.active .nav-link.menu-link {
+    color: #d4af37 !important; /* Oro */
+}
+
+.page-home .navbar-dark .navbar-nav .nav-item::after {
+    background-color: #d4af37;
+}

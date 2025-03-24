@@ -1,0 +1,319 @@
+/* Stili per la pagina della moda - stile Apple */
+.page-moda {
+    background-color: #000;
+    color: #f5f5f7;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.moda-header {
+    background: #000;
+    padding: 120px 0 60px;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.moda-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.moda-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #5856d6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+}
+
+.moda-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #86868b;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+.moda-content {
+    background-color: #000;
+    padding: 80px 0;
+}
+
+.moda-intro {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f5f5f7;
+    margin-bottom: 40px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin: 60px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #5856d6, #2196f3);
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.timeline-item {
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content {
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.timeline-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-image {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.timeline-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.timeline-image:hover img {
+    transform: scale(1.08);
+}
+
+.era-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #5856d6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.01em;
+}
+
+.trend-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.trend-list li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: #f5f5f7;
+    opacity: 0.9;
+}
+
+.trend-list li::before {
+    content: '\f3a5';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: #5856d6;
+}
+
+/* Brand Grid */
+.brand-grid {
+    margin-top: 40px;
+}
+
+.brand-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.brand-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.brand-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.brand-card:hover img {
+    transform: scale(1.08);
+}
+
+.brand-card h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+.brand-card p {
+    font-size: 14px;
+    color: #86868b;
+    padding: 0 15px;
+}
+
+/* Influence Section */
+.influence-section {
+    padding: 40px 0;
+}
+
+.influence-card {
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.influence-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.influence-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #5856d6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.influence-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f5f5f7;
+    opacity: 0.9;
+}
+
+/* Varianti di colore per la pagina moda */
+.page-moda .hip-hop-logo {
+    background: linear-gradient(90deg, #5856d6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-moda .menu-link:after {
+    background: linear-gradient(90deg, #5856d6, #2196f3);
+}
+
+.page-moda .menu-link:hover {
+    background: linear-gradient(90deg, #5856d6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive per la pagina moda */
+@media (max-width: 992px) {
+    .moda-title {
+        font-size: 42px;
+    }
+    
+    .moda-subtitle {
+        font-size: 20px;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .era-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .moda-header {
+        padding: 80px 0 40px;
+    }
+    
+    .moda-title {
+        font-size: 36px;
+    }
+    
+    .moda-subtitle {
+        font-size: 18px;
+    }
+    
+    .timeline-image {
+        height: 220px;
+        margin-bottom: 20px;
+    }
+    
+    .timeline::before {
+        display: none;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .moda-title {
+        font-size: 32px;
+    }
+    
+    .moda-intro {
+        font-size: 18px;
+    }
+    
+    .era-title {
+        font-size: 22px;
+    }
+    
+    .brand-card img {
+        height: 140px;
+    }
+}

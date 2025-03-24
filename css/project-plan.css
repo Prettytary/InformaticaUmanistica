@@ -1,0 +1,309 @@
+/* Stili per la pagina Project Plan */
+body.page-project-plan {
+    background-color: #000;
+    color: #f5f5f7;
+}
+
+/* Header del Project Plan */
+.project-plan-header {
+    background-color: #000;
+    color: white;
+    padding: 120px 0 60px;
+    text-align: center;
+    position: relative;
+}
+
+.project-plan-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #5e5ce6, #bf5af2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-plan-subtitle {
+    font-size: 24px;
+    color: #f5f5f7;
+    margin-bottom: 0;
+}
+
+/* Contenuto del Project Plan */
+.project-plan-content {
+    background-color: #111;
+    color: white;
+    padding: 60px 0;
+    min-height: 600px;
+}
+
+.project-plan-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #5e5ce6, #bf5af2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subsection-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 30px 0 20px;
+    color: #f5f5f7;
+}
+
+.project-plan-box {
+    background-color: #1a1a1a;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-plan-box p {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-plan-box p:last-child {
+    margin-bottom: 0;
+}
+
+.project-plan-box ul, 
+.project-plan-box ol {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.project-plan-box ul li, 
+.project-plan-box ol li {
+    margin-bottom: 10px;
+}
+
+.project-plan-box strong {
+    color: #f5f5f7;
+    font-weight: 600;
+}
+
+/* Stili per i diagrammi e le immagini nel project plan */
+.diagram-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.diagram-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Stili per la bibliografia nel project plan */
+.bibliografia-section {
+    margin-top: 60px;
+}
+
+.bibliografia-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #5e5ce6, #bf5af2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bibliografia-container {
+    background-color: #1a1a1a;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bibliografia-container h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f5f5f7;
+}
+
+.bibliografia-container ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.bibliografia-container ol li {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.bibliografia-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.bibliografia-container ul li {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Stili per le conclusioni */
+.conclusioni-section {
+    margin-top: 60px;
+}
+
+.conclusioni-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #5e5ce6, #bf5af2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conclusioni-box {
+    background-color: #1a1a1a;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.conclusioni-box p {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Stili per le etichette colorate */
+.label {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.label-primary {
+    background: linear-gradient(90deg, #5e5ce6, #bf5af2);
+    color: white;
+}
+
+.label-secondary {
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive per la pagina project plan */
+@media (max-width: 992px) {
+    .project-plan-title {
+        font-size: 42px;
+    }
+    
+    .project-plan-subtitle {
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .subsection-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-plan-header {
+        padding: 100px 0 40px;
+    }
+    
+    .project-plan-title {
+        font-size: 36px;
+    }
+    
+    .project-plan-subtitle {
+        font-size: 18px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .subsection-title {
+        font-size: 20px;
+    }
+    
+    .project-plan-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-plan-header {
+        padding: 80px 0 30px;
+    }
+    
+    .project-plan-title {
+        font-size: 30px;
+    }
+    
+    .project-plan-subtitle {
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .subsection-title {
+        font-size: 18px;
+    }
+}
+
+
+/* Stile per il pulsante di accesso al Project Plan */
+.project-plan-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #5e5ce6, #bf5af2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(94, 92, 230, 0.3);
+}
+
+.project-plan-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(94, 92, 230, 0.5);
+    color: white;
+    text-decoration: none;
+}
+
+.project-plan-btn i {
+    margin-right: 8px;
+}
